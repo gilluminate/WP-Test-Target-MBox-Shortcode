@@ -1,7 +1,6 @@
 === Test&Target MBox Shortcode ===
 Contributors: petethechop
-Donate link: http://www.gilluminate.com/wordpress-plugins/donations/
-Tags: comments, spam
+Tags: mbox, adobe, testing
 Requires at least: 2.5.1
 Tested up to: 3.3.1
 Stable tag: 1.5.1
