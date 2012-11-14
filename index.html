@@ -38,32 +38,65 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
         </div>
 
-        <h3>Welcome to GitHub Pages.</h3>
+        <h1>Test&amp;Target MBox Shortcode</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Provides a shortcode to wrap your content with, which will automatically be converted to the proper mbox syntax for use with Adobe Test&amp;Target.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h2>Description</h2>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Provides a shortcode to wrap your content with, which will automatically be converted to the proper mbox syntax for use with <a href="https://microsite.omniture.com/t2/help/en_US/tnt/help/">Adobe Test&amp;Target</a>. Works as a wrapper for text and images within the WordPress post/page editor.</p>
 
-<h3>Designer Templates</h3>
+<p>Also provides a settings page where you can add the URL path to your mbox.js file to be automatically included in the page head. You can upload the mbox.js file via the media uploader and copy/paste the full path.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h3>Usage</h3>
 
-<h3>Rather Drive Stick?</h3>
+<p>[mbox name="myMbox"]My Test Content[/mbox]</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>Where "myMbox" is the name of your mbox and "My Test Content" is the content you are testing using Adobe Test&amp;Target.</p>
 
-<h3>Authors and Contributors</h3>
+<p>For best results, do not leave a space or line break after the first tag or after the last, even if wrapping multiple paragraphs. Doing so will likely cause extra line breaks or paragraphs to appear on the page.
+(Note: this is an issue with the way WordPress handles shortcodes, not with this plugin)</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p><strong>Good Example:</strong></p>
 
-<h3>Support or Contact</h3>
+<p>[mbox name="myMbox"]Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.[/mbox]</p>
+
+<p><strong>Bad Example:</strong></p>
+
+<p>[mbox name="myMbox"]</p>
+
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+<p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+
+<p>[/mbox]</p>
+
+<h2>Installation</h2>
+
+<ol>
+<li>Unzip tnt-mbox-shortcode.zip and upload the contained files to the /wp-content/plugins/ directory</li>
+<li>Activate the plugin through the 'Plugins' menu in WordPress</li>
+<li>Make sure to <a href="https://microsite.omniture.com/t2/help/en_US/tnt/help/#Referencing%20mbox.js">include your mbox.js file in the header.php</a> of your theme (plans to automate that using this plugin are coming soon).</li>
+<li>Place the [mbox name="myMbox"]My Test Content[/mbox] shortcode in your templates.</li>
+</ol><h2>Frequently Asked Questions</h2>
+
+<h3>Is Adobe Test&amp;Target a free program?</h3>
+
+<p>While this plugin is free to download and use, it requires a subscription to the Test&amp;Target system provided by Adobe for a fee. A similar free option is to use <a href="http://www.google.com/websiteoptimizer">Google Website Optimizer</a>.</p>
+
+<h3>The shortcode seems to be working, but the names aren't showing up in Test&amp;Target</h3>
+
+<p>It may take a minute or two for the names to show up. You can also manually refresh in Test&amp;Target. If they still aren't showing up, make sure to <a href="https://microsite.omniture.com/t2/help/en_US/tnt/help/#Referencing%20mbox.js">include your mbox.js file in the header.php</a> of your theme (plans to automate that using this plugin are coming soon).</p>
+
+<h3>Does this plugin support Dynamic Mboxes?</h3>
+
+<p>No. <a href="https://microsite.omniture.com/t2/help/en_US/tnt/help/#About%20Dynamic%20Mboxes">Dynamic Mboxes</a> are more advanced than this plugin is currently capable of dealing with. Those will have to be manually added to your theme. Furthermore, if you are using Dynamic Mboxes, chances are you are capable of editing your theme and don't need this plugin in the first place.</p>
+
+<h1>Report Bugs</h1>
+
+<p><a href="http://wordpress.org/tags/testtarget-mbox-shortcode">http://wordpress.org/tags/testtarget-mbox-shortcode</a></p>
       </section>
 
     </div>
