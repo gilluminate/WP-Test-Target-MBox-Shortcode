@@ -2,6 +2,8 @@
 
 Provides a shortcode to wrap your content with, which will automatically be converted to the proper mbox syntax for use with Adobe Test&Target.
 
+[DOWNLOAD](http://wordpress.org/extend/plugins/testtarget-mbox-shortcode/)
+
 ## Description
 
 Provides a shortcode to wrap your content with, which will automatically be converted to the proper mbox syntax for use with [Adobe Test&Target](https://microsite.omniture.com/t2/help/en_US/tnt/help/). Works as a wrapper for text and images within the WordPress post/page editor.
